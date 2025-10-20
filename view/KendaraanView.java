@@ -6,11 +6,6 @@ import controller.KendaraanController;
 
 public class KendaraanView {
 
-  private KendaraanController kendaraanController;
-
-  public KendaraanView(){
-    this.kendaraanController = new KendaraanController();
-  }
   public void render() {
     this.printMenu();
     int menu = CLIUtils.getInt();
@@ -33,28 +28,12 @@ public class KendaraanView {
     }
   }
 
-  private void getMenuInput() {
+  private void printMenu() {
     System.out.println("Menu:");
     System.out.println("1. Tambah kendaraan");
     System.out.println("2. Tampilkan semua kendaraan");
     System.out.println("3. Urutkan kendaraan berdasarkan kapasitas");
     System.out.println("0. Keluar");
-    System.out.print("Pilihanmu: ");
-    int pilih = CLIUtils.getInt();
-    switch (pilih) {
-      case 1:
-        
-        break;
-      case 2:
-          
-        break;
-      case 3:
-        
-        break;
-    }
-  }
-  private void printMenu() {
-    
   }
 
   private void handleTambahKendaraan() {
